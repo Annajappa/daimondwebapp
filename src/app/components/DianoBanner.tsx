@@ -18,7 +18,7 @@ const DianoBanner = () => {
             <h2 className="text-3xl md:text-5xl font-serif font-semibold mb-6 leading-snug">
               Experience the DIANO<br className="hidden md:block" /> Difference
             </h2>
-            <p className="text-base text-[#3A3836] mb-8 leading-relaxed">
+            <p className="text-base text-[#3A3836] mb-8 leading-relaxed md:pl-6 md:pr-6">
               Step into a world of rare gems and refined craftsmanship. Schedule your
               private session or explore our curated collection.
             </p>

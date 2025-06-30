@@ -3,7 +3,7 @@
 
 import React from "react";
 import Image from "next/image";
-import Img1 from "../assects/bangles.jpg"; 
+import Img1 from "../assects/rambus-ring.jpg"; 
 import Img2 from "../assects/hand_ring-1.jpg";
 import Img3 from "../assects/circle-ring.jpg";
 import Img4 from "../assects/hand-ring-2.jpg";

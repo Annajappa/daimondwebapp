@@ -2,7 +2,8 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #2E2B28CC; /* Updated text color */
+  --foreground: rgba(46, 43, 40, 0.8); /* 80% opacity for general text */
+  --foreground-solid: #2E2B28;         /* Solid color for titles */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-inter: var(--font-inter);
@@ -12,24 +13,27 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #ffffff;
-    --foreground: #2E2B28CC;
+    --foreground: rgba(46, 43, 40, 0.8);
+    --foreground-solid: #2E2B28;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-inter), Arial, Helvetica, sans-serif; /* default font: Inter */
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
 }
 
-/* Title styles using Playfair Display */
+/* Title styles using Playfair Display with solid color */
 h1, h2, h3, h4, h5, h6, .title {
   font-family: var(--font-playfair), serif;
-  color: var(--foreground); /* consistent text color */
+  font-weight: 500;
+  color: var(--foreground-solid); /* No opacity */
 }
 
-/* Paragraphs use Inter font */
+/* Paragraphs use Inter font with opacity */
 p {
   font-family: var(--font-inter), sans-serif;
-  color: var(--foreground);
+  color: var(--foreground); /* 80% opacity */
+  font-weight: 300;
 }

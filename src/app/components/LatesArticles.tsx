@@ -42,7 +42,7 @@ const LatestArticles: React.FC = () => {
       <Image src={StarIcon} alt="star" width={22} height={22} className="absolute bottom-7 left-20" />
 
       {/* Title */}
-      <h2 className="text-4xl font-serif font-semibold text-[#2E2B28] mb-12">Latest Articles</h2>
+      <h2 className="text-4xl md:text-4xl font-serif font-semibold text-[#2E2B28] mb-12">Latest Articles</h2>
 
       {/* Articles */}
       <div className="flex flex-col md:flex-row justify-center items-stretch gap-8 px-4">

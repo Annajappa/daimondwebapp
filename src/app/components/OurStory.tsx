@@ -15,7 +15,7 @@ const OurStory = () => {
 
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-serif font-medium mb-8 text-center lg:text-left">
+        <h2 className="text-4xl md:text-4xl font-serif font-medium mb-8 text-center lg:text-left">
           Our Story
         </h2>
 
