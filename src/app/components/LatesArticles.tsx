@@ -1,7 +1,6 @@
-// app/components/LatestArticles.tsx
 "use client";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Image1 from "../assects/round-ring.jpg";
 import Image2 from "../assects/diamond-ring.jpg";
 import Image3 from "../assects/plain-ring.jpg";
@@ -11,7 +10,7 @@ type Article = {
   id: number;
   title: string;
   date: string;
-  image: string;
+  image: StaticImageData; // ✅ Updated here
 };
 
 const articles: Article[] = [
@@ -19,7 +18,7 @@ const articles: Article[] = [
     id: 1,
     title: "How to Care for Rare Gemstone Jewelry",
     date: "May 15, 2025",
-    image : Image1,
+    image: Image1,
   },
   {
     id: 2,
@@ -38,7 +37,7 @@ const articles: Article[] = [
 const LatestArticles: React.FC = () => {
   return (
     <section className="relative w-full py-20 px-4 md:px-15 bg-[#ffffff] text-center overflow-hidden">
-        <Image src={StarIcon} alt="star" width={20} height={20} className="absolute top-7 right-40" />
+      <Image src={StarIcon} alt="star" width={20} height={20} className="absolute top-7 right-40" />
       <Image src={StarIcon} alt="star" width={22} height={22} className="absolute bottom-7 left-15" />
       <h2 className="text-4xl font-serif font-semibold text-[#333] mb-12">Latest Articles</h2>
       <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-4">
@@ -48,8 +47,8 @@ const LatestArticles: React.FC = () => {
               <Image
                 src={article.image}
                 alt={article.title}
-                layout="fill"
-                objectFit="cover"
+                fill
+                className="object-cover"
               />
             </div>
             <h3 className="mt-4 text-lg font-medium text-[#333] font-serif">{article.title}</h3>
