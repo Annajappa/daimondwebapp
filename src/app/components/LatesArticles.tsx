@@ -10,7 +10,7 @@ type Article = {
   id: number;
   title: string;
   date: string;
-  image: StaticImageData; // ✅ Updated here
+  image: StaticImageData;
 };
 
 const articles: Article[] = [
@@ -36,14 +36,22 @@ const articles: Article[] = [
 
 const LatestArticles: React.FC = () => {
   return (
-    <section className="relative w-full py-20 px-4 md:px-15 bg-[#ffffff] text-center overflow-hidden">
+    <section className="relative w-full py-20 px-4 md:px-16 bg-[#ffffff] text-center overflow-hidden">
+      {/* Decorative Stars */}
       <Image src={StarIcon} alt="star" width={20} height={20} className="absolute top-7 right-40" />
-      <Image src={StarIcon} alt="star" width={22} height={22} className="absolute bottom-7 left-15" />
-      <h2 className="text-4xl font-serif font-semibold text-[#333] mb-12">Latest Articles</h2>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-8 px-4">
+      <Image src={StarIcon} alt="star" width={22} height={22} className="absolute bottom-7 left-20" />
+
+      {/* Title */}
+      <h2 className="text-4xl font-serif font-semibold text-[#2E2B28] mb-12">Latest Articles</h2>
+
+      {/* Articles */}
+      <div className="flex flex-col md:flex-row justify-center items-stretch gap-8 px-4">
         {articles.map((article) => (
-          <div key={article.id} className="flex flex-col items-center w-full max-w-sm text-center">
-            <div className="w-full h-64 relative rounded-lg overflow-hidden">
+          <div
+            key={article.id}
+            className="flex flex-col w-full max-w-sm text-center bg-white"
+          >
+            <div className="w-full h-64 relative rounded-lg overflow-hidden shadow-sm">
               <Image
                 src={article.image}
                 alt={article.title}
@@ -51,7 +59,7 @@ const LatestArticles: React.FC = () => {
                 className="object-cover"
               />
             </div>
-            <h3 className="mt-4 text-lg font-medium text-[#333] font-serif">{article.title}</h3>
+            <h3 className="mt-4 text-lg font-medium text-[#2E2B28] font-serif">{article.title}</h3>
             <p className="mt-1 text-sm text-gray-500 font-serif">{article.date}</p>
           </div>
         ))}
