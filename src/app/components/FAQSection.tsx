@@ -72,9 +72,9 @@ const FAQSection = () => {
               onClick={() => toggleFAQ(faq.id)}
             >
               <div className="flex justify-between items-center">
-                <h3 className="text-base md:text-lg font-medium text-[#333] font-serif">
+                <p className="text-base md:text-lg font-medium text-[#333] font-serif">
                   {faq.question}
-                </h3>
+                </p>
                 <div className="text-gray-500">
                   {isActive ? <FaTimes size={14} /> : <FaPlus size={14} />}
                 </div>

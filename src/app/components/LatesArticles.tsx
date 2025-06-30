@@ -59,8 +59,8 @@ const LatestArticles: React.FC = () => {
                 className="object-cover"
               />
             </div>
-            <h3 className="mt-4 text-lg font-medium text-[#2E2B28] font-serif">{article.title}</h3>
-            <p className="mt-1 text-sm text-gray-500 font-serif">{article.date}</p>
+            <p className="mt-4 text-lg font-medium text-[#2E2B28] font-serif">{article.title}</p>
+            <p className="mt-1 text-sm text-gray-300 font-serif">{article.date}</p>
           </div>
         ))}
       </div>
