@@ -5,7 +5,7 @@ import StarIcon from "../assects/star.png";
 
 const OurStory = () => {
   return (
-    <section className="relative w-full bg-white px-4 md:px-8 lg:px-24 py-16 font-sans text-[#2E2B28] overflow-hidden">
+    <section className="relative w-full bg-white px-4 md:px-8 lg:px-24 py-16 font-sans text-[#2E2B28] overflow-hidden mt-10 md:mt-10">
       {/* Decorative Stars */}
       <Image src={StarIcon} alt="star" width={25} height={25} className="absolute top-20 right-60" />
       <Image src={StarIcon} alt="star" width={25} height={25} className="absolute top-200 left-100" />

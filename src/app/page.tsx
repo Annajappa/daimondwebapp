@@ -1,7 +1,21 @@
-// add a small star icon (e.g., 10x10 svg)
+import HeroSection from "./components/HeroSection";
+import Legacy from "./components/Legacy";
+import DianoApart from "./components/DinoApart";
+import Collections from "./components/Collections";
+import Commitment from "./components/Commitment";
+import Testimonial from "./components/Testimonial";
+import Connect from "./components/Connect";
 
 export default function Home() {
   return (
-    <div>Home Page</div>
+    <div className="max-w-7xl mx-auto overflow-x-hidden">
+      <HeroSection />
+      <Legacy />
+      <DianoApart />
+      <Collections />
+      <Commitment />
+      <Testimonial />
+      <Connect />
+    </div>
   );
 }

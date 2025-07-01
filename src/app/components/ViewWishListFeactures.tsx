@@ -39,7 +39,7 @@ const ViewWishlistFeatures = () => {
             key={i}
             className={`flex flex-col items-center text-center px-6 py-6 w-full relative
               ${i !== wishlistData.length - 1 ? 
-                "border-b border-[#D6C5A0]/30 md:border-0 md:after:content-[''] md:after:absolute md:after:top-1/2 md:after:transform md:after:-translate-y-1/2 md:after:right-0 md:after:h-20 md:after:border-r md:after:border-[#D6C5A0]/30 md:after:w-px"
+                "border-b border-[#D6C5A0] md:border-0 md:after:content-[''] md:after:absolute md:after:top-1/2 md:after:transform md:after:-translate-y-1/2 md:after:right-0 md:after:h-20 md:after:border-r md:after:border-[#D6C5A0] md:after:w-[2px]"
                 : ""
               }`}
           >

@@ -6,6 +6,9 @@ import {
   Playfair_Display,
 } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
+import FooterWrapper from "./components/FooterWrapper";
+let marginValue = 10;
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,7 +47,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${playfair.variable} antialiased overflow-x-hidden`}
       >
+        <Navbar />
         {children}
+        <FooterWrapper />
       </body>
     </html>
   );

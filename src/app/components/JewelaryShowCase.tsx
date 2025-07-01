@@ -13,7 +13,7 @@ const imageGallery = [Img1, Img2, Img3, Img4, Img5];
 
 const JewelryShowcase = () => {
   return (
-    <section className="relative w-full bg-white pt-16 px-0 overflow-hidden">
+    <section className="relative w-full max-w-7xl mx-auto bg-white pt-16 px-0">
       {/* Star Decoration */}
       <Image
         src={StarIcon}

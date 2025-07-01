@@ -7,7 +7,7 @@ import StarIcon from "../assects/star.png";
 
 const ContactForm = () => {
   return (
-    <section className="relative w-full bg-[#ffffff] pt-20 pb-8 px-4 md:px-24">
+    <section className="relative w-full bg-[#ffffff] pt-20 pb-8 px-4 md:px-24 mt-10 md:mt-10">
 
       {/* Decorative Stars */}
       <Image src={StarIcon} alt="star" width={25} height={25} className="absolute top-10 right-50" />
