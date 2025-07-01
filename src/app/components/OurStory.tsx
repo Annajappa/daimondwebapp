@@ -1,3 +1,6 @@
+'use client';
+
+
 import Image from "next/image";
 import PendantImage from "../assects/red_daimond.jpg";
 import ModelImage from "../assects/women_with_red_diamond.jpg";

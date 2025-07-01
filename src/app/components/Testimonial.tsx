@@ -1,4 +1,5 @@
-import React from 'react'
+'use client';
+
 import { Playfair_Display, Open_Sans, Mulish } from "next/font/google";
 import Image from 'next/image';
 // import StarIcon from "../assets/star.png";

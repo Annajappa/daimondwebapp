@@ -8,7 +8,6 @@ import {
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import FooterWrapper from "./components/FooterWrapper";
-let marginValue = 10;
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

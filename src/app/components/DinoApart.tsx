@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+
 import Image from 'next/image';
 import gem3 from "../assects/gem3.jpg";
 //import StarIcon from "../assets/star.png";

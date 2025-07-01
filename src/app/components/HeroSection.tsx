@@ -1,4 +1,5 @@
-import React from 'react'
+'use client';
+
 import Image from 'next/image'
 import gem1 from "../assects/gem1.jpg";
 import gem2 from "../assects/gem2.jpg";

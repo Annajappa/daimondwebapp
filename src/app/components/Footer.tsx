@@ -1,4 +1,5 @@
-// components/Footer.tsx
+'use client'
+
 import Image from "next/image";
 import {
   FaFacebookF,
@@ -41,7 +42,7 @@ const socialLinks = [
   ];
 
 // Main Footer Component
-const Footer = ({ value }: { value: String }) => {
+const Footer = ({ value }: { value: string }) => {
   return (
     <div className={`w-full relative z-0 max-w-7xl mx-auto`}>
       <footer className={`bg-[#2E2B28] text-black p-10 ${value === "contact" ? "mt-0" : "mt-12"}`}>

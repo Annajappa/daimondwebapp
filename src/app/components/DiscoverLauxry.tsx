@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import RingImage from "../assects/Ring.jpg";
 import StarIcon from "../assects/star.png";

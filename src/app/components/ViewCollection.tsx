@@ -1,4 +1,4 @@
-// app/components/ViewCollectionImages.tsx
+
 "use client";
 
 import React from "react";
