@@ -73,9 +73,9 @@ const FAQAccordion = () => {
                   {faq.question}
                 </span>
                 {isOpen ? (
-                  <FaTimes className="text-[#2E2B28] text-sm" />
+                  <FaTimes className="text-[#2E2B28] text-sm cursor-pointer" />
                 ) : (
-                  <FaPlus className="text-[#2E2B28] text-sm" />
+                  <FaPlus className="text-[#2E2B28] text-sm cursor-pointer" />
                 )}
               </button>
 
