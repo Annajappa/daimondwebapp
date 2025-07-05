@@ -25,7 +25,6 @@ const inter = Inter({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-// Footer section items
 const QuickLinks_items = [
   "Sell Jewellery",
   "Buy Jewellery",
